@@ -2,7 +2,8 @@ const chromedriver = require('chromedriver');
 const geckodriver = require('geckodriver');
 
 module.exports = {
-  test_settings: {
+  "page_objects_path" : "./pageObjects",
+   test_settings: {
     default: {
       webdriver: {
         start_process: true,
@@ -19,7 +20,7 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true,
         chromeOptions: {
-          args: ['headless', 'disable-gpu']
+          args: [ 'disable-gpu']
         }
       }
     },
